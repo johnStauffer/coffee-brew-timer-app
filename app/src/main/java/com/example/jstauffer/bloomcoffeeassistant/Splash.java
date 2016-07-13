@@ -14,7 +14,6 @@ public class Splash extends AppCompatActivity {
                 new Runnable() {
                     @Override
                     public void run() {
-                    //TODO make intent
                         Intent intent = new Intent(Splash.this, MainActivity.class);
                         startActivity(intent);
                     }
