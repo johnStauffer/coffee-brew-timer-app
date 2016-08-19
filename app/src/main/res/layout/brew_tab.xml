@@ -11,4 +11,10 @@
         android:layout_centerVertical="true"
         android:text="Brew Tab"
         android:textAppearance="?android:attr/textAppearanceMedium" />
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/grind_image_button"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/background_splash"
+        android:background="@drawable/background_splash"/>
 </RelativeLayout>
