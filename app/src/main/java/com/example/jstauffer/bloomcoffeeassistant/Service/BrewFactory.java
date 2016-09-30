@@ -1,4 +1,4 @@
-package com.example.jstauffer.bloomcoffeeassistant.Service;
+package com.example.jstauffer.bloomcoffeeassistant.service;
 
 import com.example.jstauffer.bloomcoffeeassistant.domain.Aeropress;
 import com.example.jstauffer.bloomcoffeeassistant.domain.BrewSystem;

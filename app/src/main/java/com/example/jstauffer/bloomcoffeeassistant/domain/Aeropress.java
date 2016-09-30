@@ -1,5 +1,6 @@
 package com.example.jstauffer.bloomcoffeeassistant.domain;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -71,12 +72,11 @@ public class Aeropress implements BrewSystem {
         return this.waterMass;
     }
 
-
-    //TODO figure out java 1.8 for android -> lambdas
+    /* return sum of brew stage times */
     @Override
     public int getBrewTime() {
         int brewTime = 0;
-
+        /*sums brew times*/
         for (BrewStage brewStage : brewStages) {
             brewTime += brewStage.getStageTime();
         }
