@@ -16,11 +16,6 @@ public interface BrewSystem {
 
     int getBrewTime();
 
-    int getNumCups();
-
-    void setNumCups(int numCups);
-
     List<BrewStage> getBrewStages();
 
-    void setBrewStages(List<BrewStage> brewStages);
 }

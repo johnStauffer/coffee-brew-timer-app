@@ -11,8 +11,6 @@ import java.util.List;
 public class Aeropress implements BrewSystem {
     private int grindMass;
     private int waterMass;
-    private int brewTime;
-    private int numCups;
     private List<BrewStage> brewStages;
 
     /**
@@ -23,9 +21,8 @@ public class Aeropress implements BrewSystem {
     /**
      * Ratio water (grams) : grounds mass (grams)
      * http://legacy.sweetmarias.com/grind.brew.php
-     **/
+     */
     public static final int AEROPRESS_RATIO = 16;
-    public static final int AEROPRESS_GROUNDS_MASS = 16;
 
     //Bloom
     public static final int AEROPRESS_BLOOM_TIME = 25;
@@ -37,17 +34,8 @@ public class Aeropress implements BrewSystem {
     public static final int AEROPRESS_BREW_TIME = 105;
     public static final int AEROPRESS_BREW_MASS = 0;
 
-    /**
-     * Aeropress brew stages
-     */
-    private static BrewStage aeropressBloom = new BrewStage("Bloom", AEROPRESS_BLOOM_MASS, AEROPRESS_BLOOM_TIME);
-    private static BrewStage aeropressPour = new BrewStage("Pour", AEROPRESS_POUR_MASS, AEROPRESS_POUR_TIME);
-    private static BrewStage aeropressBrew = new BrewStage("Brew", AEROPRESS_BREW_MASS, AEROPRESS_BREW_TIME);
-    private final List<BrewStage> AEROPRESS_STAGES = Arrays.asList(aeropressBloom, aeropressPour, aeropressBrew);
-
-
     public Aeropress() {
-        brewStages = AEROPRESS_STAGES;
+        this.brewStages = initBrewStages();
     }
 
     @Override
@@ -57,8 +45,8 @@ public class Aeropress implements BrewSystem {
 
 
     /**
-     * This is a method used to set the mass of grounds as well as calculate the total water mass
-     * based off of a constant ratio
+     * This is a method used to set the mass of grounds as well as calculate and set the total water
+     * mass according to a constant ratio
      */
     @Override
     public void setGrindMass(int grindMass) {
@@ -84,23 +72,16 @@ public class Aeropress implements BrewSystem {
     }
 
     @Override
-    public int getNumCups() {
-        return 0;
-    }
-
-    @Override
-    public void setNumCups(int numCups) {
-
-    }
-
-    @Override
     public List<BrewStage> getBrewStages() {
         return brewStages;
     }
 
-    @Override
-    public void setBrewStages(List<BrewStage> brewStages) {
-        this.brewStages = brewStages;
+    /*Creating brew stages with brew constants and then making them into a list */
+    private List<BrewStage> initBrewStages() {
+        BrewStage aeropressBloom = new BrewStage("Bloom", AEROPRESS_BLOOM_MASS, AEROPRESS_BLOOM_TIME);
+        BrewStage aeropressPour = new BrewStage("Pour", AEROPRESS_POUR_MASS, AEROPRESS_POUR_TIME);
+        BrewStage aeropressBrew = new BrewStage("Brew", AEROPRESS_BREW_MASS, AEROPRESS_BREW_TIME);
+        return Arrays.asList(aeropressBloom, aeropressPour, aeropressBrew);
     }
 
 }

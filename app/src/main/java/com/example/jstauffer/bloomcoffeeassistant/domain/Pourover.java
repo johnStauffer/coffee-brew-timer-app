@@ -29,16 +29,6 @@ public class Pourover implements BrewSystem {
     }
 
     @Override
-    public int getNumCups() {
-        return 0;
-    }
-
-    @Override
-    public void setNumCups(int numCups) {
-
-    }
-
-    @Override
     public List<BrewStage> getBrewStages() {
         return null;
     }

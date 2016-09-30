@@ -5,5 +5,5 @@ package com.example.jstauffer.bloomcoffeeassistant.service;
  */
 
 public interface BrewService {
-    
+
 }
