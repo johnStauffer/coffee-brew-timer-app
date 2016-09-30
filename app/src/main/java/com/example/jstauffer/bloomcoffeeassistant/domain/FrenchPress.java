@@ -11,7 +11,6 @@ public class FrenchPress implements BrewSystem {
 
     private int grindMass;
     private int waterMass;
-    private int brewTime;
     private List<BrewStage> brewStages;
 
     /**

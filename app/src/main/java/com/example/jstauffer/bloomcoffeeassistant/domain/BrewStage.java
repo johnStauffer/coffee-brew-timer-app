@@ -13,6 +13,7 @@ public class BrewStage {
     private int stageTime;
 
     public BrewStage(String stageName, int waterMass, int stageTime){
+        this.stageName = stageName;
         this.stageWaterMass = waterMass;
         this.stageTime = stageTime;
     }
