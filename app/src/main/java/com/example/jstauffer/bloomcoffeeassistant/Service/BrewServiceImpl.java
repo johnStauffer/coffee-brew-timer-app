@@ -1,23 +1,20 @@
 package com.example.jstauffer.bloomcoffeeassistant.service;
 
 /**
- * Created by jstauffer on 9/23/16.
+ * Created by jstauffer on 10/7/16.
  */
 
 public class BrewServiceImpl implements BrewService {
 
-    private static BrewService instance = null;
+    BrewService instance;
 
-    private BrewServiceImpl() {
-        //Singleton
+    private BrewServiceImpl (){
     }
 
-    /**
-     * Singleton pattern instantiation
-     */
-    public static BrewService getInstance() {
-        if (instance == null)
+    public BrewService getInstance() {
+        if (instance == null) {
             instance = new BrewServiceImpl();
+        }
         return instance;
     }
 
