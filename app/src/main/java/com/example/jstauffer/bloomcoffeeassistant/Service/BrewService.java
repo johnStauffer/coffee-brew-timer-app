@@ -1,4 +1,4 @@
-package com.example.jstauffer.bloomcoffeeassistant.service;
+package com.example.jstauffer.bloomcoffeeassistant.Service;
 
 /**
  * Created by jstauffer on 9/23/16.

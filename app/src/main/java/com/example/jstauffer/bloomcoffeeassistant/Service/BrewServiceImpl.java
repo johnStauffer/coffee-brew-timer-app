@@ -1,4 +1,4 @@
-package com.example.jstauffer.bloomcoffeeassistant.service;
+package com.example.jstauffer.bloomcoffeeassistant.Service;
 
 /**
  * Created by jstauffer on 10/7/16.
@@ -6,7 +6,7 @@ package com.example.jstauffer.bloomcoffeeassistant.service;
 
 public class BrewServiceImpl implements BrewService {
 
-    BrewService instance;
+    BrewService instance = null ;
 
     private BrewServiceImpl (){
     }
