@@ -10,6 +10,5 @@
         android:textColor="#FFFFFF"
         android:text="Aeropress"
         android:textSize="25dp"
-        android:typeface=""
         android:background="@drawable/coffee_beans"/>
 </LinearLayout>

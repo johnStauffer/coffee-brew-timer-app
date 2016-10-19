@@ -1,9 +1,12 @@
 package com.example.jstauffer.bloomcoffeeassistant.ui;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.View;
+import android.widget.Button;
 
 import com.example.jstauffer.bloomcoffeeassistant.R;
 import com.example.jstauffer.bloomcoffeeassistant.ui.widget.ViewPagerAdapter;
@@ -21,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     SlidingTabLayout tabs;
     CharSequence Titles[] = {"Brew", "Learn"};
     int Numtabs = 2;
+    Button aeropressBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +50,22 @@ public class MainActivity extends AppCompatActivity {
         });
         // Set the ViewPager For the SlidingTabsLayout
         tabs.setViewPager(pager);
+
+        //Set the Button for Brew
+        aeropressBtn = (Button) findViewById(R.id.aeropressBtn);
+        aeropressBtn.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick
+        });
+
     }
+
+
+    public void startBrew(){
+        Intent intent = new Intent(this, Brew.class);
+        startActivity(intent);
+    }
+
+    
 
 }

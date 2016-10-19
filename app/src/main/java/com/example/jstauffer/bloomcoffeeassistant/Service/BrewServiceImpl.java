@@ -1,4 +1,4 @@
-package com.example.jstauffer.bloomcoffeeassistant.Service;
+package com.example.jstauffer.bloomcoffeeassistant.service;
 
 /**
  * Created by jstauffer on 10/7/16.
@@ -8,7 +8,8 @@ public class BrewServiceImpl implements BrewService {
 
     BrewService instance = null ;
 
-    private BrewServiceImpl (){
+    private BrewServiceImpl() {
+        //Singleton
     }
 
     public BrewService getInstance() {

@@ -6,12 +6,16 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+
 import com.example.jstauffer.bloomcoffeeassistant.R;
 
 /**
  * Created by jstauffer on 7/14/16.
  */
 public class BrewTab extends Fragment {
+    Button aeropressBtn;
+
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.brew_tab, container, false);
