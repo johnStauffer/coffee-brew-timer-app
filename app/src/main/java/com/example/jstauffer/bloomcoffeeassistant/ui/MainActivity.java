@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         //Set ViewPager & Adapter
         pager = (ViewPager) findViewById(R.id.pager);
         pager.setAdapter(adapter);
-        // Assiging the Sliding Tab Layout View
+        // Assigning the Sliding Tab Layout View
         tabs = (SlidingTabLayout) findViewById(R.id.tabs);
         tabs.setDistributeEvenly(true); // Spaces tabs evenly
         // Set color for scroll bar
@@ -52,20 +52,25 @@ public class MainActivity extends AppCompatActivity {
         tabs.setViewPager(pager);
 
         //Set the Button for Brew
-        aeropressBtn = (Button) findViewById(R.id.aeropressBtn);
-        aeropressBtn.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick
-        });
-
+        try {
+            aeropressBtn = (Button) findViewById(R.id.aeropressBtn);
+            aeropressBtn.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(null, AeropressBrewActivity.class);
+                    startActivity(intent);
+                }
+            });
+        }catch (Exception e){
+            System.out.println("Null Pointer Setting button listener.");
+        }
     }
 
 
-    public void startBrew(){
+    public void startBrew() {
         Intent intent = new Intent(this, Brew.class);
         startActivity(intent);
     }
 
-    
 
 }

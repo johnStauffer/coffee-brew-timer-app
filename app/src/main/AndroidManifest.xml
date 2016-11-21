@@ -22,7 +22,8 @@
             android:name=".ui.MainActivity"
             android:label="@string/title_activity_main"
             android:theme="@style/AppTheme" />
-        <activity android:name=".ui.Brew"></activity>
+        <activity android:name=".ui.Brew" />
+        <activity android:name=".ui.AeropressBrewActivity"></activity>
     </application>
 
 </manifest>
