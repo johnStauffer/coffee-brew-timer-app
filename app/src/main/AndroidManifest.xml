@@ -21,7 +21,8 @@
         <activity
             android:name=".ui.MainActivity"
             android:label="@string/title_activity_main"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"/>
         <activity android:name=".ui.Brew" />
         <activity android:name=".ui.AeropressBrewActivity"></activity>
     </application>

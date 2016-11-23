@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="185dp"
@@ -11,6 +12,7 @@
         android:text="Aeropress"
         android:textSize="25dp"
         android:background="@drawable/aeropress"/>
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="185dp"
@@ -18,11 +20,12 @@
         android:text="Pourover"
         android:textSize="25dp"
         android:background="@drawable/chemex"/>
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="185dp"
         android:id="@+id/frenchPressBtn"
         android:text="FrenchPress"
         android:textSize="25dp"
-        android:background="@drawable/french_press"/>
+        android:background="@drawable/french_press1"/>
 </LinearLayout>
