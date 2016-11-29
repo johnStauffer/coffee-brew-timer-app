@@ -4,28 +4,28 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <Button
+    <com.example.jstauffer.bloomcoffeeassistant.ui.widget.CustomImgBtn
         android:layout_width="match_parent"
         android:layout_height="185dp"
         android:id="@+id/aeropressBtn"
         android:textColor="#FFFFFF"
         android:text="Aeropress"
-        android:textSize="25dp"
-        android:background="@drawable/aeropress"/>
+        android:textSize="40dp"
+        android:background="@drawable/aeropress5"/>
 
-    <Button
+    <com.example.jstauffer.bloomcoffeeassistant.ui.widget.CustomImgBtn
         android:layout_width="match_parent"
         android:layout_height="185dp"
         android:id="@+id/pouroverBtn"
         android:text="Pourover"
-        android:textSize="25dp"
-        android:background="@drawable/chemex"/>
+        android:textSize="40dp"
+        android:background="@drawable/chemex5"/>
 
-    <Button
+    <com.example.jstauffer.bloomcoffeeassistant.ui.widget.CustomImgBtn
         android:layout_width="match_parent"
         android:layout_height="185dp"
         android:id="@+id/frenchPressBtn"
         android:text="FrenchPress"
-        android:textSize="25dp"
-        android:background="@drawable/french_press1"/>
+        android:textSize="40dp"
+        android:background="@drawable/french_press6"/>
 </LinearLayout>
