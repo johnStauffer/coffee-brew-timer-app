@@ -42,19 +42,20 @@ public class BrewTab extends Fragment implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
-        // Intent intent = new Intent(v.getContext(), ); //TODO make MassActivity
+        Intent intent = new Intent(v.getContext(), MassActivity.class );
         switch (v.getId()) {
             case R.id.aeropressBtn:
-                //TODO make intent
+                intent.putExtra("brew_method", "aeropress");
                 break;
             case R.id.frenchPressBtn:
-                //TODO make intent
+                intent.putExtra("brew_method", "frenchpress");
                 break;
             case R.id.pouroverBtn:
-                //TODO make intent
+                intent.putExtra("brew_method", "pourover");
                 break;
             default:
                 break;
         }
+        startActivity(intent);
     }
 }

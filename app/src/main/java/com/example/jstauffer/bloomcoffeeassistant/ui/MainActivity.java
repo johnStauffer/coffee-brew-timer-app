@@ -50,20 +50,6 @@ public class MainActivity extends AppCompatActivity {
         });
         // Set the ViewPager For the SlidingTabsLayout
         tabs.setViewPager(pager);
-
-        //Set the Button for Brew
-        try {
-            aeropressBtn = (Button) findViewById(R.id.aeropressBtn);
-            aeropressBtn.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Intent intent = new Intent(null, AeropressBrewActivity.class);
-                    startActivity(intent);
-                }
-            });
-        }catch (Exception e){
-            System.out.println("Null Pointer Setting button listener.");
-        }
     }
 
 

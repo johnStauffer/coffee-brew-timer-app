@@ -21,10 +21,14 @@
         <activity
             android:name=".ui.MainActivity"
             android:label="@string/title_activity_main"
-            android:theme="@style/AppTheme"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
         <activity android:name=".ui.Brew" />
-        <activity android:name=".ui.AeropressBrewActivity"></activity>
+        <activity android:name=".ui.AeropressBrewActivity" />
+        <activity
+            android:name=".ui.MassActivity"
+            android:label="@string/title_activity_mass"
+            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>

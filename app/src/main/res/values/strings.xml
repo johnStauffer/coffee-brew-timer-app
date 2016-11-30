@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Bloom Coffee Assistant</string>
     <string name="title_activity_main">Bloom Coffee</string>
+    <string name="title_activity_mass">MassActivity</string>
 </resources>
