@@ -1,6 +1,7 @@
 package com.example.jstauffer.bloomcoffeeassistant.ui;
 
 import android.os.CountDownTimer;
+import android.provider.Settings;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
@@ -33,8 +34,13 @@ public class BrewActivity extends AppCompatActivity {
 
             @Override
             public void onFinish() {
-
+                finishBrew();
             }
         };
     }
+
+    private void finishBrew(){
+        System.out.println("Brew Finished");
+    }
+
 }
