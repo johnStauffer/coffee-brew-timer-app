@@ -24,7 +24,7 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
         <activity android:name=".ui.Brew" />
-        <activity android:name=".ui.AeropressBrewActivity" />
+        <activity android:name=".ui.BrewActivity" />
         <activity
             android:name=".ui.MassActivity"
             android:label="@string/title_activity_mass"
